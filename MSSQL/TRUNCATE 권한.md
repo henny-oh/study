@@ -83,9 +83,11 @@ EXEC dbo.TRUNCATE_OFFICE
 보안 > 로그인 > 계정 > 속성 > 사용자 매핑에서 접근할 DB를 매핑 및 역할 멤버 자격을 부여한다.
   
   -사용자 매핑
+
 ![Alt text](/MSSQL/IMAGE/2.PNG)
     
 -데이터베이스 역할 멤버 지정
+
 ![Alt text](/MSSQL/IMAGE/1.PNG)
 
 
