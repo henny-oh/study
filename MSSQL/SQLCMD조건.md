@@ -99,3 +99,26 @@ SQLCMD -S<IP>,<PORT> -U<USER_ID>  -P<USER_PW> -i <"실행SQL 파일"> -s"||" -y 
 </code>
 </pre>
 ![Alt text](/MSSQL/IMAGE/6.PNG)
+
+<hr/>
+
+## 출력 결과 - 새로 만들기 / 이어 붙이기
+
+### -출력 결과 : 새로 만들기 (-o)
+
+<pre>
+<code>
+SQLCMD -S<IP>,<PORT> -U<USER_ID>  -P<USER_PW> -i <"실행SQL 파일"> -s"||" -y 0 -o <"결과 저장 파일">
+</code>
+</pre>
+
+이미 존재하고 있는 파일이 있다면 삭제 후 새로 출력 결과를 저장한다.
+
+### -출력 결과 : 이어 붙이기 (>>)
+
+<pre>
+<code>
+SQLCMD -S<IP>,<PORT> -U<USER_ID>  -P<USER_PW> -i <"실행SQL 파일"> -s"||" -y 0 >> <"결과 저장 파일">
+</code>
+</pre>
+이미 존재하고 있는 파일이 있다면 그 파일 내용 뒤에 이어 붙여 결과를 저장한다.
